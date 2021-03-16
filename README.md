@@ -20,6 +20,8 @@ If data is needed to explore the bFMD method, the simDatHub function found in si
 ## STEP 1: Perform bFMD
 To execute the bFMD method, use the FMD function from FMD1.R as shown below. Either use the simulated data from STEP 0, or input and replace the inputs into the FMD function to match the objects desired.
 
+    #Import all functions for performing bFMD
+    source("FMD1.R")
     #Perform bFMD
     bFMDResults <- FMD(x=X, y=y)
     
