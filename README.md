@@ -28,10 +28,13 @@ To analyze the objects returned from the FMD method and extract the identified m
 
     #Pull out the variables identified as part of the functional module. 1=variable is in the model and 0=variable is NOT in the model.
     moduleVariables <- bFMDResults$select
+    
     #How balanced is the detected module? 0=perfectly inbalanced (bad) and 1=perfectly balanced (ideal)
     balance <- bFMDResults$balance
+    
     #What is the matrix that was constructed to detect module variables?
     w <- bFMDResults$w
+    
     #What are the loadings from the sparse PCA? Note that sparse PCA was applied to matrix w (refer to manuscript for additional details)
     loadings <- bFMDResults$loadings
     
