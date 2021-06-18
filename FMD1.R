@@ -23,6 +23,8 @@
 #' dat <- simDatHub()    # generate small test dataset
 #' FMD(x=dat$x, y=dat$y)
 
+library(irr)
+
 FMD <- function(x, y, maxSize=ncol(x), maxiter=200, conv=5, decline=20) {
   x <- scale(x)
   y <- scale(y)
